@@ -3,12 +3,12 @@ Installation
 we need the latex package 'leadsheets'
 
 - ubuntu:
-  sudo apt install texlive-music
+: sudo apt install texlive-music texlive-xetex
 
 if this is not uptodate we can replace the files with the new ones
 by...
-
-: sudo cp ~/prog/tex/leadsheets/* /usr/share/texlive/texmf-dist/tex/latex/leadsheets 	
+: git clone https://github.com/cgnieder/leadsheets.git
+: sudo cp leadsheets/* /usr/share/texlive/texmf-dist/tex/latex/leadsheets 	
 
 : sudo texhash
 

@@ -1,0 +1,71 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  title-template = ourtitle,
+  align-chords={l}, smash-chords=false,
+  verse/template=toplabel,
+  chorus/template=toplabel,
+  chorus/label-format={\textbf},
+  interlude/template=toplabel,
+  interlude/label-format={\textbf},
+  %empty-chord-dim={0pt}
+}
+
+%% ,print-chords=false
+\begin{song}[verse/numbered]%,remember-chords]
+  {title={Das weiche Wasser},key=Bmi, composer={Bots}}
+  \begin{multicols}{2}
+  \begin{interlude}
+    \begin{tabular}[t]{@{}lllllllllll}
+      |_{D}&&|_{G}&_{D}&|_{Bm}&&|_{Em}&_{F#}&|&| \\
+      |_{Bm}&_{A}&|_{D}&_{A}&|_{D}&_{F#}&|_{Bm}&&| \\
+    \end{tabular}
+  \end{interlude}
+  \begin{verse}    
+    Eu^{Bm}ropa hatte ^{D}zweimal ^{A}Krieg, \\
+    der ^{D}dritte ^{A}wird der ^{D}letzte ^{F#}sein, \\
+    gib ^{Bm}bloß nicht ^{A}auf, 
+    gib ^{D}nicht klein ^{A}bei,  \\
+    das ^{F#}weiche Wasser bricht den ^{Bm}Stein! \\
+  \end{verse}
+  \begin{verse}
+    Die ^{D}Bombe die kein ^{G}Leben ^{D}schont, \\
+    Ma^{Bm}schinen nur und ^*{Em}Stahlbe ^{F#}ton, \\
+    hat ^{Bm}uns zu ^{A}einem ^{D}Lied ver^{A}eint, \\
+    das ^{D}weiche Wasser ^{F#}bricht den ^{Bm}Stein! \\
+  \end{verse}
+  \begin{chorus}[format={\itshape}]
+    Es ^{Bm}reißt die schwersten ^{D}Mauern ^{A}ein \\
+    und ^{D}sind wir ^{A}schwach und ^{D}sind wir ^{F#}klein, \\
+    wir ^{Bm}wollen ^{A}wie das ^{D}Wasser ^{A}sein, \\
+    das ^{F#}weiche Wasser bricht den ^{Bm}Stein! \\ 
+  \end{chorus}
+  \columnbreak
+  \begin{verse}
+    Ra^{D}keten stehn vor ^{G}unsrer ^{D}Tür, \\
+    die ^{Bm}solln zu unsrem ^{Em}Schutz hier ^{F#}sein! \\
+    Auf ^{Bm}solchen ^{A}Schutz ver^{D}zichten ^{A}wir, \\
+    das ^{D}weiche Wasser ^{F#}bricht den ^{Bm}Stein! \\
+  \end{verse}
+  \begin{chorus}[after-label=]\end{chorus}
+  \begin{verse}
+    Die ^{D}Rüstung sitzt am ^{G}Tisch der ^{D}Welt \\
+    und ^{Bm}Kinder die vor ^{Em}Hunger ^{F#}schrein! \\
+    Für ^{Bm}Waffen ^{A}fließt das ^{D}große ^{A}Geld, \\
+    doch ^{D}weiches Wasser ^{F#}bricht den ^{Bm}Stein! \\
+  \end{verse}
+  \begin{chorus}[after-label=]\end{chorus}
+  \begin{interlude}[after-label=]\end{interlude}
+  \begin{verse}  
+    Komm ^{Bm}feiern wir ein ^*{D}Friedens ^{A}fest \\
+    und ^{D}zeigen ^{A}wie sich's ^{D}leben ^{F#}läßt, Mensch! \\
+     ^{Bm}Menschen ^{A}können ^{D}Menschen ^{A}sein, \\
+    das ^{F#}weiche Wasser bricht den ^{Bm}Stein! \\
+  \end{verse}
+  \begin{chorus}[after-label=]\end{chorus}
+  \begin{chorus}[after-label=]\end{chorus}
+  \end{multicols}
+\end{song}
+\end{document}

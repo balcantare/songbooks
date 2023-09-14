@@ -3,19 +3,20 @@
 
 \begin{document}
 \setleadsheets{
-  title-template = ourtitle,
-  align-chords={l}, smash-chords=false,
-  verse/template=toplabel,
-  chorus/template=toplabel,
-  chorus/label-format={\textbf},
-  interlude/template=toplabel,
-  interlude/label-format={\textbf},
-  %empty-chord-dim={0pt}
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  , text-format={\fontsize{14pt}{11pt}\selectfont}
+  , chords/format = {\fontsize{16pt}{9pt}}
+  %% ,print-chords=false
 }
 
-%% ,print-chords=false
+
 \begin{song}[verse/numbered]%,remember-chords]
-  {title={Das weiche Wasser},key=Bmi, composer={Bots}}
+  {title={Das weiche Wasser},key=Bm, composer={Bots}}
   \begin{multicols}{2}
   \begin{interlude}
     \begin{tabular}[t]{@{}lllllllllll}

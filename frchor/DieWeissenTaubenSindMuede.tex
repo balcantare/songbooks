@@ -1,8 +1,5 @@
 \documentclass{leadsheet}
-\usepackage{nopageno}
 \input{../include/env}
-%\renewcommand{\normalsize}{\fontsize{13pt}{13pt}\selectfont}
-\renewcommand{\normalsize}{\fontsize{12pt}{12pt}\selectfont}
 
 \begin{document}
 
@@ -10,6 +7,9 @@
   align-chords={l}
   , verse/template=toplabel
   , chorus/template=toplabel
+  , chorus/label-format={\textbf}  
+  , text-format={\fontsize{12pt}{9pt}\selectfont}
+  , chords/format = {\fontsize{14pt}{9pt}}
 %  , print-chords=false
 }
 
@@ -18,7 +18,7 @@
     ,composer={Christoph Busse}
     ,lyrics={Christoph Busse, erweitert von Beate Tarach}
     ,key=D}
-  \begin{multicols}{2}
+\begin{multicols}{2}
 \begin{verse}
   Komm ^{D}her, Marie, ein ^{A}letztes Glas, \\
   gen^{G}ießen wir den ^{D}Augenblick, \\
@@ -86,6 +86,6 @@
   Ma^rie, die ^Welt - sie steht uns ^offen.  \\
 \end{verse}
 \begin{chorus}[after-label=]\end{chorus}
-  \end{multicols}
+\end{multicols}
 \end{song}
 \end{document}

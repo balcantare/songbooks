@@ -19,3 +19,7 @@ by...
     : sudo mkdir /usr/share/fonts/opentype/musejazz
     : sudo cp MuseJazzText.otf /usr/share/fonts/opentype/musejazz
     : sudo fc-cache -fsv
+
+- pdfbook2 for booklet printing
+  - for ubuntu:
+    : sudo apt install texlive-extra-utils

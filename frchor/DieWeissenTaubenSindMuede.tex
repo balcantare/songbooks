@@ -8,10 +8,11 @@
   , verse/template=toplabel
   , chorus/template=toplabel
   , chorus/label-format={\textbf}  
-  , text-format={\fontsize{12pt}{9pt}\selectfont}
-  , chords/format = {\fontsize{14pt}{9pt}}
+%  , text-format={\fontsize{12pt}{9pt}\selectfont}
+%  , chords/format = {\fontsize{14pt}{9pt}}
 %  , print-chords=false
 }
+\setsbfontsize{12pt}
 
 \begin{song}[verse/numbered,remember-chords]
   {title={Die weißen Tauben sind müde}
@@ -56,7 +57,7 @@
   den ^letzten Schluck vom ^letzten Wein. \\
   Ma^rie, die ^Welt beginnt zu ^sterben. \\
 \end{verse}
-%̧\columnbreak
+\ifsbprintchords{}{\columnbreak}
 \begin{chorus}[after-label=]\end{chorus}
 \begin{verse}
  Wach ^auf, Marie, ein ^neuer Tag  \\

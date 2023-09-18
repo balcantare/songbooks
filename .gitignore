@@ -3,5 +3,7 @@
 *.dep
 *.xdv
 *.dvi
+*.toc
+*.md5
 *.pdf
 *~

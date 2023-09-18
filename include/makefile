@@ -12,7 +12,7 @@ install_targets = $(addprefix $(INSTDIR)/,$(books) $(patsubst %.pdf,%.log,$(book
 LATEX_CMD := xelatex
 
 # The suffixes used in this Makefile.
-.SUFFIXES: .tex .dep .pdf .log
+.SUFFIXES: .tex .dep .pdf .log .toc .toc.md5 .aux
 
 .PHONY: all install
 all: $(books)
@@ -23,10 +23,7 @@ $(DEPFILES):
 include $(wildcard $(DEPFILES))
 
 %.pdf: %.tex
-	$(LATEX_CMD) $< 
-	echo -n '$@ : ' > $(*F).dep
-	grep -Eo '\.+/[^>) ]*\.tex' $(*F).log | tr '\n' ' ' >> $(*F).dep
-
+	./$(TOPDIR)/include/mklatex.sh $(*F)
 
 $(INSTDIR)/%: %
 	cp $< $@

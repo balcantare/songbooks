@@ -2,12 +2,15 @@
 \usepackage{leadsheets}
 \useleadsheetslibraries{external}
 \input{../include/env}
+\usepackage[colorlinks=false]{hyperref}
 
 \begin{document}
 \setleadsheets{
   , title-template = sbleadsheet
-%  , print-chords=false
 }
+\tableofcontents
+\newpage
+
 \includeleadsheet{DasWeicheWasser}
 \pagebreak
 \includeleadsheet{DieWeissenTaubenSindMuede}

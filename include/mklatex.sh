@@ -16,6 +16,10 @@ done
 
 # Extract the dependencies from the xelatex log file
 # and write these to (.dep) dependencies file.
+# because the filenames are casualy divided by newlines
+# we replace all newlines by '?' do the grep , delete the '?'
+# andjoin the results to one line
 
 echo -n "$1.pdf : " > $1.dep
-grep -Eo '\.+/[^>) ]*\.tex' $1.log | tr '\n' ' ' >> $1.dep
+cat $1.log | tr '\n' '?' | grep -Eo '\.+/[.//a-zA-Z?]*\.tex' | tr -d '?' | tr '\n' ' ' >> $1.dep
+# grep -Eo '\.+/[^>) ]*\.tex' $1.log | tr '\n' ' ' >> $1.dep

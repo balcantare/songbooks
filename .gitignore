@@ -4,6 +4,7 @@
 *.xdv
 *.dvi
 *.toc
+*.out
 *.md5
 *.pdf
 *~

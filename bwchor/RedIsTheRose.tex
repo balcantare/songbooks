@@ -1,0 +1,77 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+   ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Red is the Rose}
+    , key=D
+  }
+  \begin{multicols}{2}
+    \begin{verse}
+      Come ^{D}over the hills, \\
+      my ^{Em}bonnie Irish lass.^{A} \\
+      Come ^{D}over the ^{D/B}hills 
+      to your ^*{G}dar ^{A}ling. \\
+      ^{G}You choose the ^{D}road, love, \\
+      and ^{Em}I'll make the ^{A}vow. \\
+      And ^{D}I'll be your ^{G}true love \\ 
+      for^*{A}e - ^{D}ver. \\
+    \end{verse}
+
+    \begin{chorus}[format={\itshape}]
+      ^{D}Red is the rose \\
+      that in ^{Em}yonder garden grows,^{A} \\
+      ^{D}fair is the ^{D/B}lily of the ^*{G}val ^{A}ley, \\
+      ^{G}clear is the ^{D}water \\
+      that ^{Em}flows from the ^{A}Boyne, \\
+      but ^{D}my love is ^{G}fairer than ^*{A}a - ^{D}ny. \\
+    \end{chorus}
+    \columnbreak
+
+    \begin{verse}
+      'Twas ^down by Killarney's \\
+       green ^woods that we strayed^. \\
+      When the ^moon and the ^stars \\
+      they were ^*shi ^ning. \\
+      The ^moon shone its ^rays \\
+      on her ^locks of golden ^hair, \\
+      And she ^swore she'd be ^my love \\
+      for^*e - ^ver. \\
+    \end{verse}
+  
+    \begin{chorus}[after-label=]\end{chorus}
+
+    % \columnbreak
+
+    \begin{verse} 
+      It's ^not for the parting  \\
+      ^that my sister pains^. \\
+      It's ^not for the ^grief of my ^*mo ^ther. \\
+      'Tis ^all for the ^loss of my ^bonny \\ Irish ^lass, \\
+      that ^my heart is ^breaking for^*e - ^ver. \\
+    \end{verse}
+
+    \begin{chorus}[after-label=]\end{chorus}
+
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

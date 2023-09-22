@@ -1,0 +1,75 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Die Erde ist unsere Mutter}
+    , key=Dm
+    , composer={Beate Tarach}
+  }
+  \begin{multicols}{2}
+  \begin{verse}
+    Die ^{Dm}Erde ist unsere Mutter \\
+    ^{F}die uns das Leben ^{C}gab.  \\
+    Der ^{Gm}Wind ist unser Bruder, \\
+    der da ^{Dm}singt für uns jeden Tag. \\
+  \end{verse}
+  
+  \begin{chorus}[format={\itshape}]
+    ^{Dm}hayoweh hayo^{C}weh %\\
+    hayoweh hayo^{Dm}weh \\
+    hayoweh hayo^{C}weh %\\
+    hayoweh hayo^{Dm}weh \\
+  \end{chorus}
+
+  \begin{verse}
+    Die ^Blumen sind unsere Schwestern \\
+    er^blühn jeden Morgen der ^Welt. \\
+    Und ^all die Träume von gestern \\
+    haben ^uns die Bäume erzählt. \\
+  \end{verse}
+  
+  \begin{chorus}[after-label=]\end{chorus}
+  \columnbreak
+  %\ifsbprintchords{\columnbreak}{}
+
+  \begin{verse} 
+    Der ^Himmel ist unser Vater \\
+    be^hütet uns alle ^hier: \\
+    die ^Pflanzen im Erdengarten. \\
+    Uns ^Menschen und jedes Tier. \\
+  \end{verse}
+
+  \begin{chorus}[after-label=]\end{chorus}
+
+  \begin{verse} 
+    Ge^meinsam können wir da sein \\
+    auf ^dieser herrlichen ^Welt. \\
+    Denn ^wir sind eine Familie \\
+    ^unter dem Sternenzelt. \\
+  \end{verse}
+
+  \begin{chorus}[after-label=]\end{chorus}
+
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

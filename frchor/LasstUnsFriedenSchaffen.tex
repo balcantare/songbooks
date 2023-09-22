@@ -1,0 +1,79 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Lasst uns Frieden schaffen!}
+    , key=Dm
+    , composer={Beate Tarrach,Reinhard Simmgen}
+  }
+  \begin{multicols}{2}
+    \begin{verse}
+      ^{Dm}Ach, ich wünscht', ich könnte fliegen, \\
+      ^{C}fort von all dem Hass, den Kriegen, \\
+      ^{Gm}fort von all dem Wahnsin, \\
+      der uns ^{A7}in die Enge treibt. \\
+      ^{Dm}in den Nächten, die ich wache, \\
+      ^{F}weil ich mir nur Sorgen mache, \\
+      ^{Gm}wird mir klar das für uns Menschen \\ 
+      ^{A7}doch nur eines bleibt: \\
+    \end{verse}
+  
+    \begin{chorus}[format={\itshape}]
+      |: Lasst uns ^{Dm}Frieden schaffen, \\
+      Lasst uns ^{F}Frieden schaffen, \\
+      Lasst uns ^{C}Frieden schaffen, \\
+      ohne ^{Dm}Waffen! :| \\
+    \end{chorus}
+    \columnbreak
+    \begin{verse}
+      ^Stoppt die Macht der Rüstungsbosse \\
+      ^und die Wege der Geschosse, \\
+      ^die sie ohne Skrupel \\
+      über^allhin exportiern'! \\
+      ^Und Milliarden Gelder fließen, \\
+      ^damit Menschen sich erschießen \\
+      ^und im Kampf der Mächtigen \\
+      doch ^immer nur verliern'. \\
+    \end{verse}
+  
+    \begin{chorus}[after-label=]\end{chorus}
+
+  %\ifsbprintchords{\columnbreak}{}
+
+  \begin{verse} 
+    ^Völker, lasst Euch nicht verblenden, \\
+    ^Menschen nehmt Euch bei \\
+    den Händen! \\
+    ^Lasst nicht zu, dass sie uns \\
+    aufein^ander hetzen wolln'! \\
+    ^Denn in allen ihren Kriegen \\
+    ^werden stets die Reichen siegen. \\
+    ^Mütter, leistet Widerstand, \\
+    be^vor sie Eure Söhne holn'! \\
+  \end{verse}
+
+  \begin{chorus}[after-label=]\end{chorus}
+
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

@@ -1,0 +1,71 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Wer möchte nicht im Leben bleiben}
+    , key=C
+    , composer={Kurt Schwaen}
+    , lyrics={Wera Küchenmeister}
+  }
+  \begin{multicols}{2}
+    \ifsbprintchords{  
+    \begin{interlude}
+      \begin{tabular}[t]{@{}lllllllll}
+        |_{*C}&&|&&|_{Am}&_{Dm}&|_{G}&_{C}&| \\
+      \end{tabular}
+    \end{interlude}
+  }
+  {
+    \begin{interlude}[after-label=]\end{interlude}
+  }
+  
+  \begin{verse}
+    Wer ^{C}möchte ^{Dm}nicht im Leben ^{C}bleiben, \\
+    die ^{G}Sonne und den Mond be^{C}sehn, \\
+    |: mit ^{Dm}Winden sich umher zu ^{G}treiben \\
+    und an ^{G}Wassern still zu ^{*C}stehn. :| \\
+  \end{verse}
+
+  \begin{interlude}[after-label=]\end{interlude}
+
+  \columnbreak
+  \begin{verse}
+    Wer ^möchte ^nicht im Leben ^bleiben, \\
+    ^Mensch' und Tieren zuge^sellt. \\
+    |: Wer ^ließe sich denn gern ver^treiben, \\
+    von dieser ^reichen bunten ^Welt. :| \\
+  \end{verse}
+
+  \begin{interlude}[after-label=]\end{interlude}
+  
+  \begin{verse}
+    O ^lasset ^uns im Leben ^bleiben, \\
+    weil ^jeden Tag ein Tag be^ginnt. \\
+    |: O ^wollt sie nicht zu früh ver^treiben, \\
+    alle ^die lebendig ^sind. :| \\
+  \end{verse}
+
+  \begin{interlude}[after-label=]\end{interlude}
+\end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

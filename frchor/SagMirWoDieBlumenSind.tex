@@ -1,0 +1,93 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Sag mir wo die Blumen sind}
+    , key=C
+    , composer={Pete Seeger}
+    , lyrics={Max Colpet}
+  }
+  \begin{multicols}{2}
+    \ifsbprintchords{  
+      \begin{interlude}
+        | _{*C} | _{Am} | _{Dm} | _{G} |  
+      \end{interlude}
+    }
+    { \begin{interlude}[after-label=]\end{interlude} }
+    \begin{verse}
+      ^{C} Sag mir wo die ^{Am}Blumen sind, \\
+      ^{F} wo sind sie ge^{G}blieben? \\
+      ^{C} Sag mir, wo die ^{Am}Blumen sind, \\
+      ^{Dm} was ist ge^{G}scheh'n? \\
+      ^{C} Sag mir, wo die ^{Am}Blumen sind? \\
+      ^{F} Mädchen pflückten ^{G}sie geschwind. \\
+    \end{verse}
+    \begin{chorus}[format={\itshape}]
+      ^{F} Wann wird man ^{C}je verstehn, \\
+      ^{F} wann wird man ^{G}je ver^{*C}stehn.
+    \end{chorus}
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+      ^ Sag mir wo die ^Mädchen sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag mir, wo die ^Mädchen sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag mir, wo die ^Mädchen sind? \\
+      ^ Männer nahmen ^sie geschwind. \\
+    \end{verse}
+    \begin{chorus}[after-label=]\end{chorus}
+    \begin{interlude}[after-label=]\end{interlude}
+    \columnbreak
+    \begin{verse}
+      ^ Sag mir wo die ^Männer sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag mir, wo die ^Männer sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag mir, wo die ^Männer sind? \\
+      ^ Zogen fort der ^Krieg beginnt. \\
+    \end{verse}
+    \begin{chorus}[after-label=]\end{chorus}
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+      ^ Sag wo die Sol^daten sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag wo die Sol^daten sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag wo die Sol^daten sind? \\
+      ^ Über Gräbern ^weht der Wind. \\
+    \end{verse}
+    \begin{chorus}[after-label=]\end{chorus}
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+      ^ Sag mir wo die ^Gräber sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag mir, wo die ^Gräber sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag mir, wo die ^Gräber sind? \\
+      ^ Blumen blühn im ^Sommerwind. \\
+    \end{verse}
+    \begin{chorus}[after-label=]\end{chorus}
+    \begin{interlude}[after-label=]\end{interlude}
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

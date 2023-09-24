@@ -1,0 +1,61 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Od yavo' shalom aleinu}
+    , key=D
+    , composer={Mosh Ben-Ari}
+  }
+  \begin{multicols}{2}
+
+    \begin{verse}[after-label=,numbered=false]
+      |: ^{D} Od yavo' shalom aleinu, \\
+      ^{G} od yavo' shalom aleinu, \\
+      ^{D} od yavo' shalom aleinu, \\
+      ^{G}Ve a^{A}l ku^{D}lam. :|
+    \end{verse}
+
+    \begin{chorus}[after-label=,named=false,format=]
+      |: Sa^{D}laam A^{G}leinu ve' al \\
+      kol ha ol^{D}am Salaam Sal^{G}aam. :|
+    \end{chorus}
+
+    \columnbreak
+    \begin{verse}[after-label=,numbered=false]
+     |: ^ Allen Menschen dieser Erde \\
+     ^ wünschen wir, daß Frieden werde, \\
+      ^ daß die Völker dieser Erde \\
+      ^*friedli ^ch ver^eint!   :|
+    \end{verse}
+  
+    \begin{chorus}[after-label=,named=false,format=]
+      |: Sa^laam! Wir ^halten fest an \\
+      unserem
+      Tr^aum Salaam Sal^aam! :|
+    \end{chorus}
+
+    
+    % \ifsbprintchords{\columnbreak}{}
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

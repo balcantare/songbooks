@@ -1,0 +1,81 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Solange unsre Lieder klingen}
+    , key=D
+    , composer={Beate Tarach, Reinhard Simmgen}
+  }
+  \begin{multicols}{1}
+
+    \begin{verse}
+      ^{D}Sonnenhelle St^{G}raßen bunte \\
+      ^{Em}Blumen blühn am R^{D}and. \\
+      unsre Wege fü^{Bm}hrten uns heut \\
+      ^{Em}quer übers ^{A7}Land \\
+      ^{D}Strahlend bunte ^{G}Sommergrüße \\
+      ^{Em}bringen wir euch ^{D}mit. \\
+      Und in ^{Bm}tausend Farben ^{G}malen \\
+      wir da^{Em}raus mit euch ein ^{A G A}Lied!
+    \end{verse}
+
+    \begin{chorus}[format={\itshape}]
+      ^{D}Solange unsre Lieder klingen, \\
+      ^{G}sind wir st^{D}ark. \\
+      So^{G}lange wir zusammen singen \\
+      ^{Em}loht sich jeder ^{A7}neue Tag! ^{G A} \\
+      So^{D}lange unsre Lieder klingen, \\
+      ^{G}spüren wir, was wirklich zählt, \\
+      ja ^{D}wir stehn hier und ^{Bm}singen \\
+      unser ^{G}Lied in die bunte W^{D}elt.
+    \end{chorus}
+    \columnbreak
+    \begin{verse}
+      ^Leute, macht die He^rzen auf und \\
+      ^lasst die Sonne r^ein. \\
+      Wärme gibt uns Me^nschen Kraft  \\
+      und ^läßt uns ver^zeihn. \\
+      ^Vielfalt öffnet ^unsre Wege, \\
+      ^Einfalt macht sie ^dicht. \\
+      Bunte ^Farben sind ein ^Segen. \\
+      Bunt ist ^selbst das Sonnen^licht! 
+    \end{verse}  
+    \begin{chorus}[after-label=]\end{chorus}
+    \begin{verse}
+      ^Öffnet heute a^lle Straßen \\
+      ^und die Türen w^eit. \\
+      Lasst den frischen Wi^nd herein, \\
+      es ^ist an der ^Zeit, \\
+      ^daß der Welt an ^allen Orten \\
+      ^bunte Freude ^sprüht, \\
+      und das ^Liebe wie ein ^Vogel \\
+      frei durch ^unsern Himmel ^zieht.
+    \end{verse}  
+    \begin{chorus}[after-label=]\end{chorus}
+
+    
+    % \ifsbprintchords{\columnbreak}{}
+
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

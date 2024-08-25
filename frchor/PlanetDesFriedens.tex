@@ -1,0 +1,71 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered, remember-chords]
+  {title={Planet des Friedens},key=C, composer={Beate Tarrach, Reinhard Simmgen}}
+  %\begin{multicols}{1}
+  \ifsbprintchords{  
+    \begin{interlude}
+       \begin{flushleft}  
+       \begin{tabular}[t]{@{}lllllllll}
+        |_{C}&&|_{F}&_{G}&|_{F}&_{G}&|_{C}&&| \\
+      \end{tabular}
+      \end{flushleft}
+    \end{interlude}
+ }
+ {
+    \begin{interlude}[after-label=]\end{interlude}
+ }
+  \begin{verse}    
+     ^{C}Soll unsre Welt ein Pla^{F}net des Friedens ^{C}sein, \\
+     ^{C}müssen wir uns von ^{F}Haß und Krieg be^{G}frein'. \\
+     ^{F}Kriege ge^{Em}winnen nur ^{F}die mit Macht und ^{Am}Geld. \\
+     Deshalb ^{F}lasst uns keine ^{Em}Feinde sein mehr ^{G} - auf dieser Welt!   \\
+  \end{verse}
+ 
+   \begin{chorus}[format={\flushleft\itshape}]
+    
+     Ein Pla^{F}net des ^{C}Friedens - ^{F}das sei unsre ^{C}Welt! \\
+     Ein Pla^{Am}net des Friedens, wo ^{F}jedes Leben ^{G}zählt.  \\
+     Ein Pla^{F}net des ^{C}Friedens - ein ^{F}Ort der Menschlich^{Am}keit! \\
+     Unser ^{F}Traum braucht eine ^{G}Chance auf Wirklich^{C}keit, ^{F}  \\
+     geben ^{C}wir dem Traum die ^{F}Chance auf ^*{G}Wirklich ^{C}keit!  \\
+  \end{chorus}
+  %\ifsbprintchords{\columnbreak}{}
+ 
+ \begin{interlude}[after-label=]\end{interlude}
+
+    \begin{verse}
+    ^Kann unsre Welt ein Pla^net des Friedens ^sein? \\
+    ^Können wir Völker uns ^Haß und Leid ver^zeihn'? \\
+    ^Menschen der ^Erde ^reicht euch die ^Hand, \\
+    denn wir ^alle brauchen ^endlich Frieden, ^ in jedem Land! \\
+  \end{verse}
+  
+  \begin{chorus}[after-label=]\end{chorus}
+  
+  \begin{interlude}[after-label=]\end{interlude}
+  
+  \begin{verse}
+    ^Wird unsre Welt ein Pla^net des Friedens ^sein, \\
+    ^kann alles Leben und ^Glück auf ihr ge^deihn'. \\
+    Wenn ^Wunden ver^heilen, kann ^Neues ent^stehn'. \\
+    Lasst als ^*Menschheitsfa ^milie uns den ^Weg gemeinsam gehn'! \\
+  \end{verse}
+  
+  \begin{chorus}[after-label=]\end{chorus}
+  %\end{multicols}
+\end{song}
+\end{document}

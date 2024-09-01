@@ -1,5 +1,5 @@
 INSTDIR := out
-SUBDIRS := frchor bwchor
+SUBDIRS := frchor bwchor balcantare
 
 $(INSTDIR) :
 	mkdir $(INSTDIR)

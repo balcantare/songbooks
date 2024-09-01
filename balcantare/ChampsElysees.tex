@@ -1,0 +1,82 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{16pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Les Champs Elysées}
+    , key=Am
+  }
+  \begin{multicols}{2}
+  \ifsbprintchords{  
+    \begin{interlude}
+      \begin{tabular}[t]{@{}lllll}
+        |_{Dm7}&|_{G7}&|_{C}&|_{Am}&| \\ 
+		|_{Dm7}&|_{G7}&|_{C}&|_{}&| \\
+      \end{tabular}
+    \end{interlude}
+  }
+  { \begin{interlude}[after-label=]\end{interlude} }
+  \begin{verse}    
+  Je m'^{C}baladais sur l'a^{E7}venue, \\
+  Le ^{Am}coeur ouvert à ^{C7}l'inconnu \\
+  J'a^{F}vais envie de ^{C}dire Bonjour \\
+  à n'^{D7}importe qui^{G} \\
+
+  N'im^{C}porte qui et ^{E7}ce fut toi \\
+  et ^{Am}je t'ai dit n'im^{C7}porte quoi \\
+  Il ^{F}suffisait de ^{C}te parler   \\
+  pour  ^*{F}t'appri ^*{G7}voi ^{C}ser  
+  \end{verse}
+
+  \begin{chorus}[format={\itshape}]
+   ^{C}Aux ^{E7}Champs Ély^{Am}sées ^{C7} \\
+   ^{F}aux ^{C}Champs Ély^{D7}sées ^{G7} \\
+   ^{C}Au soleil, ^{E7}sous la pluie, \\ 
+   ^{Am}à midi   ou à^{C7} minuit \\
+   Il ^{F}y a tout‿c'que ^{C}vous voulez \\ 
+   aux ^{F}Champs Él^*{G7}y ^{C}sées. 
+  \end{chorus}
+  \begin{interlude}[after-label=]\end{interlude}
+  \ifsbprintchords{\columnbreak}{}
+
+  \begin{verse}
+    ^Tu m'as dit J'ai ^rendezvous \\
+    dans ^un sous-sol a^vec des fous \\
+    qui ^vivent la guita^re à la main, \\ 
+    du ^soir au ma^tin \\
+    A^lors, je t'ai ac^compagnée \\
+    on ^a chanté, on ^a dansé \\
+    Et ^l'on n'a même ^pas pensé \\  
+    ^à s'em^*bras ^ser. 
+  \end{verse}
+
+ \begin{chorus}[after-label=]\end{chorus}
+ \begin{interlude}[after-label=]\end{interlude}
+
+ \begin{verse}
+  Hi^er au soir deux ^inconnus \\ 
+  et ^ce matin, sur ^l'avenue \\
+  deux ^amoureux, tou^t étourdis \\ 
+  par ^la longue ^nuit \\
+  Et ^de l'Étoile à ^la Concorde, \\ 
+  ^un orchestre à ^mille cordes \\
+  Tous ^les oiseaux du ^point du jour \\ 
+  ^chantent ^*l'a ^mour. 
+ \end{verse}
+  
+  \begin{chorus}[after-label=]\end{chorus}
+  \begin{interlude}[after-label=]\end{interlude}
+  \end{multicols}
+\end{song}
+\end{document}

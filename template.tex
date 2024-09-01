@@ -1,0 +1,43 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  , align-chords={l}
+  , info/format = {\fontsize{10pt}{12pt}\selectfont}
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={}
+    , key=
+    , composer={}
+    , lyrics={}
+  }
+ % \begin{info}\end{info}
+  \begin{multicols}{2}
+  \begin{verse}
+  \end{verse}
+  \begin{chorus}[format={\itshape}]
+  \end{chorus}  
+  % \columnbreak
+  \begin{verse}
+  \end{verse}
+  \begin{chorus}[after-label=]\end{chorus}
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

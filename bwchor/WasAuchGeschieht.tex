@@ -1,0 +1,88 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  , align-chords={l}
+  , info/format = {\fontsize{10pt}{12pt}\selectfont}
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{14pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Was auch geschieht}
+    , key=Dm
+    , composer={Reinhard Simmgen}
+    , lyrics={Beate Tarrach}
+  }
+ % \begin{info}\end{info}
+  \begin{multicols}{2}
+
+  \ifsbprintchords{  
+    \begin{interlude}
+      \begin{tabular}[t]{@{}lllllllll}
+        |_{Dm}&_{C}&|_{Dm}&_{A7}&|_{Dm}&_{A7}&|_{Dm}&&| \\
+      \end{tabular}
+    \end{interlude}
+  }
+  {\begin{interlude}[after-label=]\end{interlude}}
+  \begin{verse}
+  ^{Dm}Stolzer Baum, der Sturm kann deine \\
+  ^{Am7}Krone einst ver^{Dm}letzen.  \\
+  ^{Dm}Doch auf deinen starken Ast \\
+  die ^{Am7}Vögel sich gern ^{Dm}setzen. \\
+  |: ^{C}Was auch ge^{F}schieht, \\
+  ^{Gm}Was auch ge^{Dm}schieht, \\
+  Im ^{Gm}Spiel mit dem ^{Dm}Wind \\
+  singt der ^{A7}Baum sein ^{Dm}Lied. :| \\
+  |: ^{Dm}Lalalalalala, ^{A7}lalalalala. :| \\
+  |: ^{C}Stark wie ein ^{F}Baum ^{Gm}können wir ^{Dm}sein,\\ 
+  ^{Gm}aus Milliarden ^{Dm}Zellen, ^{A7}keine ist al^{Dm}lein. :| \\  
+  \end{verse}
+  \begin{interlude}[after-label=]\end{interlude}
+  \begin{verse}
+  ^Wilde Wogen, harte Felsen \\
+  ^wollen euch zer^schlagen. \\
+  ^Doch im weiten Meer seid ihr es, \\
+  ^die die Möwen ^tragen. \\
+ |: ^Was auch ge^schieht, \\
+  ^Was auch ge^schieht, \\
+  Im ^Tanz der Ge^zeiten \\
+  singt das ^Meer sein ^Lied. :| \\
+   \columnbreak
+ |: ^Lalalalalala, ^lalalalala. :| \\
+ |: ^Stark wie das ^Meer ^können wir ^sein, \\
+  ^aus Milliarden ^Tropfen, \\
+  ^keiner ist al^lein. :| \\
+  \end{verse}
+  \begin{interlude}[after-label=]\end{interlude}
+  \begin{verse}
+  ^Alte Frau, die weißen Haare \\
+  ^wehn' im Sommer^wind. \\
+  ^Friedlich schlafend liegt in ihrem \\
+  ^Arm ein kleines ^Kind. \\
+ |: ^Was auch ge^schieht, \\
+  ^Was auch ge^schieht, \\
+  (Kommt,) ^singen wir des ^Lebens \\
+  ^wunderbares ^Lied! :| \\
+  |: ^Lalalalalala, ^lalalalala. :| \\
+  |:  ^Stark für das ^Leben ^können wir ^sein, \\
+  ^halten wir zu^sammen, \\
+  ist ^keiner  al^lein. :| \\
+  \end{verse}
+  \end{multicols}
+\end{song}
+\end{document}
+
+
+
+
+  
+
+
+ 

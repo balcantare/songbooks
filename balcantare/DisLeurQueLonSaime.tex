@@ -10,24 +10,25 @@
   , chorus/label-format={\textbf}
   , interlude/template=toplabel
   , interlude/label-format={\textbf}
-  ,print-chords=false
+  , transpose={-1}%,print-chords=false
 }
 \setsbfontsize{12pt}
 
 \begin{song}[verse/numbered,remember-chords]
   { , title={Disleur que l'on s'aime}
     , key=Gm
+    , composer={HK}
   }
   \begin{multicols}{2}
    
 
     \begin{chorus}[format={\itshape}]
       ^{Gm}Oh mais dis-leur que l'on ^{Cm}s'aime, \\
-      ^{F}Dis-leur que ça nous fait du ^{Bf}bien \\
+      ^{F}Dis-leur que ça nous fait du ^{Bb}bien \\
       ^{Gm}En quoi c'la s'rait il un pro^{Cm}blème \\
       ^{F}Nous nous tenons par la ^{Gm}main \\
       ^{Gm}Oh mais dis-leur que l'on ^{Cm}sème \\
-      ^{F}Dis-leur que ça nous fait du ^{Bf}bien \\
+      ^{F}Dis-leur que ça nous fait du ^{Bb}bien \\
       ^{Gm}Non nous ne sommes pas un pro^{Cm}blème \\
       ^{F}Nous sommes le monde de de^{Gm}main. \\
    \end{chorus}
@@ -35,11 +36,11 @@
     \begin{verse}
     Dis-leur que c'est ain^{Cm}si \\
     Que naissent les co^{F}lombes \\
-    Dis-leur que c'est i^{Bf}ci  \\
+    Dis-leur que c'est i^{Bb}ci  \\
     Que commen^{Dm}ce le nouveau ^{Gm}monde \\
     Dis-leur nos cœurs qui ^{Cm}s'ouvrent \\
     Quand le monde s'i^{F}sole  \\
-    Dis-leur qu'on se re^{Bf}trouve \\
+    Dis-leur qu'on se re^{Bb}trouve \\
      Émancip^{Dm}és des cami^{Gm}soles \\
     Dis-leurs nos corps qui ^{Cm}vibrent \\
     Nos notes de mu^{Gm}sique \\
@@ -47,7 +48,7 @@
     A chaque pas de ^{Gm}danse \\
     sur ^{F}la place pu^{Gm}blique \\
     \end{verse}
-
+  \begin{chorus}[after-label=]\end{chorus}
     \begin{verse}
     Dis-leur qu'on est u^nies \\
     Dis-leur qu'on est en^semble \\
@@ -63,6 +64,8 @@
     Au petit matin d'un grand ^soir, \\
     heu^reux et indo^ciles \\
     \end{verse}
+
+  \begin{chorus}[after-label=]\end{chorus}
 
     \begin{chorus}[format={\itshape}]
     o, aber sag Ihnen daß wir uns lieben, \\

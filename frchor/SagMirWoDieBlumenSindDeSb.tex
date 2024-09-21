@@ -1,0 +1,97 @@
+\documentclass{leadsheet}
+\input{../include/env}
+
+\begin{document}
+\setleadsheets{
+  align-chords={l} 
+  , verse/template=toplabel
+  , chorus/template=toplabel
+  , chorus/label-format={\textbf}
+  , interlude/template=toplabel
+  , interlude/label-format={\textbf}
+  % ,print-chords=false
+}
+\setsbfontsize{12pt}
+
+\begin{song}[verse/numbered,remember-chords]
+  { , title={Sag mir wo die Blumen sind, Hdźe te kwětki su, praj hdźe}
+    , key=C
+    , composer={Pete Seeger}
+    , lyrics={dt Max Colpet, sb Tomasz Nawka}
+  }
+  \begin{multicols}{2}
+    \ifsbprintchords{  
+      \begin{interlude}
+        | _{*C} | _{Am} | _{Dm} | _{G} |  
+      \end{interlude}
+    }
+    { \begin{interlude}[after-label=]\end{interlude} }
+    \begin{verse}
+      ^{C} Sag mir wo die ^{Am}Blumen sind, \\
+      ^{F} wo sind sie ge^{G}blieben? \\
+      ^{C} Sag mir, wo die ^{Am}Blumen sind, \\
+      ^{Dm} was ist ge^{G}scheh'n? \\
+      ^{C} Sag mir, wo die ^{Am}Blumen sind? \\
+      ^{F} Mädchen pflückten ^{G}sie geschwind. \\
+      ^{F} Wann wird man ^{C}je verstehn, \\
+      ^{F} wann wird man ^{G}je ver^{*C}stehn.
+     \end{verse}
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+  ^ Hdźe te holcy ^su, praj hdźe, \\
+  ^ hdźe su wone ^wostałe? \\
+  ^ Hdźe te holcy ^su, praj hdźe, \\
+  ^ što z\_nimi ^je? \\
+  ^ Hdźe te holcy ^su, praj hdźe, \\
+  ^ mužojo sej ^wzachu je. \\
+  ^ Hdy swět to ^*zrozu mi,  ^ hdy swět to ^*zrozu ^mi. \\
+    \end{verse}
+    \begin{interlude}[after-label=]\end{interlude}
+   % \columnbreak
+    \begin{verse}
+      ^ Sag mir wo die ^Männer sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag mir, wo die ^Männer sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag mir, wo die ^Männer sind? \\
+      ^ Zogen fort der ^Krieg beginnt. \\
+      ^ Wann wird man ^je verstehn, \\
+      ^ wann wird man ^je ver^stehn. \\
+     \end{verse}
+ \columnbreak
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+  ^ Hdźe su woja^cy, praj mi, \\
+  ^ hdźe su woni ^wostali? \\
+  ^ Hdźe su woja^cy, \\
+  ^ praj mi, dokal su ^šli? \\
+  ^ Hdźe su woja^cy,  \\
+  ^ praj mi, wětr nad jich ^rowami. \\
+  ^ Hdy swět to ^*zrozu mi, 
+  ^ hdy swět to ^*zrozu ^mi. \\
+    \end{verse}
+    \begin{interlude}[after-label=]\end{interlude}
+    \begin{verse}
+      ^ Sag mir wo die ^Gräber sind, \\
+      ^ wo sind sie ge^blieben? \\
+      ^ Sag mir, wo die ^Gräber sind, \\
+      ^ was ist ge^scheh'n? \\
+      ^ Sag mir, wo die ^Gräber sind? \\
+      ^ Blumen blühn im ^Sommerwind. \\
+      ^ Wann wird man ^je verstehn, \\
+      ^ wann wird man ^je ver^stehn.
+     \end{verse}
+     \begin{verse}
+    ^ Hdźe te kwětki ^su, praj hdźe,  \\
+    ^ hdźe su wone ^wostałe? \\
+    ^ Hdźe te kwětki ^su, praj hdźe, \\  
+    ^ što z\_nimi ^je? \\
+    ^ Hdźe te kwětki ^su, praj hdźe, \\  
+    ^ holcy zešći^pachu  je. \\
+  ^ Hdy swět to ^*zrozu mi, 
+  ^ hdy swět to ^*zrozu ^mi. \\
+     \end{verse}
+    \begin{interlude}[after-label=]\end{interlude}
+  \end{multicols}
+\end{song}
+\end{document}
